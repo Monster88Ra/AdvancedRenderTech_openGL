@@ -1,4 +1,4 @@
-/*
+
 // GLEW
 #define GLEW_STATIC
 #include <GL\glew.h>
@@ -438,4 +438,3 @@ void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 {
     camera.ProcessMouseScroll(yoffset);
 }
-*/

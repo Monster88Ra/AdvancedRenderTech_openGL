@@ -1,4 +1,4 @@
-
+/*
 // GLEW
 #define GLEW_STATIC
 #include <GL\glew.h>
@@ -182,7 +182,7 @@ int main()
 		frames ++;
 		if(currentTime - lastTime >= 1.0)
 		{
-			_snprintf ( title, 64,"ShadowMapping - [FPS: %3.2f] - [%f ms/frame]",frames,1000.0f / (float)frames );
+			_snprintf ( title, 64,"deferred shading - [FPS: %3.2f] - [%f ms/frame]",frames,1000.0f / (float)frames );
 			glfwSetWindowTitle (window, title);
 			frames = 0;
 			lastTime ++;
@@ -216,17 +216,17 @@ int main()
 		// show them to screen
 		//glBindFramebuffer(GL_READ_FRAMEBUFFER, gBuffer);
 		//position
-		/*glBindTexture(GL_TEXTURE_2D,gPosition);
-		glFramebufferTexture2D(GL_TEXTURE_2D, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, gPosition, 0);
-		glReadBuffer(GL_COLOR_ATTACHMENT0);*/
+		//glBindTexture(GL_TEXTURE_2D,gPosition);
+		//glFramebufferTexture2D(GL_TEXTURE_2D, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, gPosition, 0);
+		//glReadBuffer(GL_COLOR_ATTACHMENT0);
 		////normal
 		//glBindTexture(GL_TEXTURE_2D,gPosition);
 		//glFramebufferTexture2D(GL_TEXTURE_2D, GL_COLOR_ATTACHMENT1, GL_TEXTURE_2D, gNormal, 0);
 		//glDrawBuffer(GL_COLOR_ATTACHMENT1);
 		//diffuse  + specular
-		/*glBindTexture(GL_TEXTURE_2D,gPosition);
-		glFramebufferTexture2D(GL_TEXTURE_2D, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, gAlbedoSpec, 0);
-		glDrawBuffer(GL_COLOR_ATTACHMENT2);
+		//glBindTexture(GL_TEXTURE_2D,gPosition);
+		//glFramebufferTexture2D(GL_TEXTURE_2D, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, gAlbedoSpec, 0);
+		//glDrawBuffer(GL_COLOR_ATTACHMENT2);
 
 		 glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
 		 glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT3, GL_TEXTURE_2D, testTex, 0);
@@ -236,7 +236,7 @@ int main()
 		 glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT3, GL_TEXTURE_2D, 0, 0);
 		 glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT2, GL_TEXTURE_2D, 0, 0);
 
-		 glBindFramebuffer(GL_FRAMEBUFFER,0);*/
+		 glBindFramebuffer(GL_FRAMEBUFFER,0);
 
 		//2.lighting pass
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -475,3 +475,4 @@ void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
     camera.ProcessMouseScroll(yoffset);
 }
 
+*/
